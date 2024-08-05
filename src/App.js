@@ -6,6 +6,7 @@ import WhyArticle from './components/articles/whyArticle';
 import About from './components/articles/about';
 import Nav from './components/nav/nav';
 import Welcome from './components/welcome/welcome';
+import Footer from './components/footer/footer';
 
 function App() {
   return (
@@ -33,9 +34,13 @@ function App() {
 
             <About />
 
+
         </main>
+            <Footer />
     </div>
   );
 }
 
 export default App;
+
+// dodac animacje do jak to działa
