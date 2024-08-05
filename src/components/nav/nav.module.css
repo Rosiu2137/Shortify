@@ -1,0 +1,53 @@
+.nav>ul
+{
+    list-style-type: none;
+    display: flex;
+    gap:6rem;
+    font-size: 2rem;
+    font-family: "Arimo", sans-serif;
+    font-weight:700;
+
+
+}
+.nav
+{
+    background-color: #D98E04;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    position: sticky !important;
+    top:0px !important;
+    z-index: 10 !important;
+
+}
+.nav>ul>li
+{
+    cursor: pointer;
+}
+.nav>ul>li:hover
+{
+    color: #D93232;
+}
+.logo
+{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 1rem;
+    width: 10.5vw;
+    opacity: 0;
+    transition: all .5s ease;
+    transform: scale(0);
+    cursor: default;
+}
+.logoDisplay
+{
+    opacity: 1 !important;
+    transform: scale(1);
+    cursor: pointer;
+}
+.logo>img
+{
+    width:100%;
+}

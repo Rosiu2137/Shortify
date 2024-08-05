@@ -1,0 +1,94 @@
+.linkArticle
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.5rem;
+    padding-bottom: 2rem;
+}
+.linkArticle>h1
+{
+    width:100%;
+    font-weight: 900;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #D98E04;
+    color: white;
+
+
+
+}
+.inputCon
+{
+    width: 80%;
+    padding-bottom: .4rem;
+    position: relative;
+    margin-bottom: .5rem;
+}
+.inputCon>input
+{
+    font-size: 2rem;
+    width:100%;
+    outline: none;
+    background: none;
+    border:0;
+    padding: .3rem .8rem;
+    font-family: "Arimo", sans-serif;
+    letter-spacing: .05rem;
+    font-weight: 700;
+    color: rgb(217, 217, 217);
+    cursor: pointer;
+}
+.inputCon>input::placeholder
+{
+
+   font-weight: 700;
+}
+.inputCon>input:focus
+{
+    cursor: text;
+}
+.bottomBorder
+{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right:0;
+    height: .4rem;
+    border-radius: 20px;
+    background-color: grey;
+    overflow: hidden;
+}
+.innerBottomBorder
+{
+    width:100%;
+    height: 100%;
+    background-color: #D98E04;
+    transform: scaleX(0);
+    transition: all .5s ease;
+}
+.innerBottomBorderFilled
+{
+    transform: scaleX(1);
+}
+.linkArticle>button
+{
+    width:80%;
+    font-size: 2rem;
+    outline: none;
+    background: grey;
+    font-weight: 900;
+    border:.4rem solid rgb(80, 80, 80);
+    border-radius: 1rem;
+    padding: .3rem;
+    cursor: pointer;
+    transition: all .3s ease;
+    letter-spacing: .1rem;
+    font-weight: 900;
+}
+.linkArticle>button:hover
+{
+    background: #D98E04;
+    border:.4rem solid #D98E04;
+}

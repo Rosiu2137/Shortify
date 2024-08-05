@@ -1,0 +1,114 @@
+.article
+{
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:.3rem;
+
+}
+.article>h2
+{
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: "Unbounded", sans-serif;
+    color: #f25C05;
+}
+.list
+{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    text-align: center;
+    margin: 4rem 0 0 0;
+}
+.list>li
+{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    font-size: 1.1rem;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 900;
+    justify-items: center;
+    transition: all .5s ease;
+}
+.icon
+{
+    width:10rem;
+    height: 10rem;
+    fill: white;
+}
+.icon2
+{
+    width:10rem;
+    height: 10rem;
+
+}
+.animation2,
+.animation
+{
+    transform: translate(0,-5%);
+    color: #D9A404;
+}
+.animation>:first-child
+{
+    fill: #D9A404;
+
+}
+.icon2StrokeOn
+{
+    stroke: #D9A404 !important;
+    transition: all .5s ease;
+}
+.icon2Stroke
+{
+    stroke: white;
+    transition: all .5s ease;
+}
+.article>h3
+{
+    font-size: 1.8rem;
+
+    display: flex;
+    gap:.5rem;
+    text-align: center;
+    flex-direction: column;
+
+}
+.mark
+{
+    color: #d93232;
+    font-weight: 900;
+    background: none;
+    font-family: "Unbounded", sans-serif;
+    font-size: 1.5rem;
+}
+.articleWhy
+{
+    gap:1.5rem;
+}
+.article>p
+{
+    font-size: 1.2rem;
+    font-family: "Arimo", sans-serif;
+    font-weight:500;
+    text-align: center;
+    margin: 1rem 0;
+    color: rgb(183, 183, 183);
+}
+.blockQuote
+{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 900;
+    color: #D98E04;
+}
+.blockQuote>mark
+{
+    color: #d93232;
+    background: none;
+}
