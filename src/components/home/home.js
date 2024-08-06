@@ -4,10 +4,19 @@ import WhyArticle from '../articles/whyArticle';
 import About from '../articles/about';
 import Welcome from '../welcome/welcome';
 import styles from './home.module.css'
+import Header from '../header/header'; 
+import Nav from '../nav/nav';
+import Footer from '../footer/footer';
 
 function Home()
 {
     return(
+        <>
+        <Header />
+        
+        <Nav />
+
+
         <main className={styles.main}>
 
         <Welcome />
@@ -27,8 +36,10 @@ function Home()
 
         <About />
 
+        </main>
 
-    </main>
+        <Footer />
+    </>
     )
 }
 
