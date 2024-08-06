@@ -18,7 +18,21 @@ function Footer()
             </div>
 
             <div className={styles.docs}>
+                <ul>
+                    <li>Regulamin</li>
+                    <li>Polityka Cookies</li>
+                    <li>Prawa</li>
+                    <li>Ochrona Danych</li>
+                    <li>Bezpieczeństwo</li>
+                </ul>
 
+                <ul>
+                    <li>Forum</li>
+                    <li>Rozwój</li>
+                    <li>Działania</li>
+                    <li>Kontakt</li>
+                    <li>Zgłoszenia</li>
+                </ul>
             </div>
 
         </footer>

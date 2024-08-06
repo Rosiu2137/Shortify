@@ -2,10 +2,10 @@
 {
     width:100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap:2rem;
-    padding: 1rem 2rem 2rem 2rem;
-    background-color: #1f1f1f;
+    grid-template-columns: 4fr 3fr;
+    gap:0rem;
+    padding: 2rem 2rem 3rem 2rem;
+    background-color: #1d1d1d;
 }
 .logo
 {
@@ -15,12 +15,13 @@
 }
 .logo>img
 {
-    width:60%;
+    width:50%;
 }
 .logo>h2
 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
+    color: rgb(161, 161, 161);
 }
 .logo>h2>mark>sup,
 .logo>h2>mark
@@ -31,5 +32,29 @@
 }
 .docs
 {
-    background-color: orange;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap:3rem;
+}
+.docs>ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap:.8rem;
+    font-size: 1.3rem;
+    
+}
+.docs>ul>li
+{
+    cursor: pointer;
+    color: grey;
+    font-weight: 700;
+    transition: all .3s ease;
+}
+.docs>ul>li:hover
+{
+    transform: translate(1rem,0);
+    color: #D98E04;
 }
