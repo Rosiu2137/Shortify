@@ -1,4 +1,25 @@
 .article
 {
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:1.5rem;
+}
+.logo
+{
+    width:30vw;
+}
+.article>h1
+{
+    font-size: 2.3rem;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 900;
+    color: #D98E04;
+}
+.loadingIcon
+{
+    width:10rem;
+    height: 10rem;
 }
