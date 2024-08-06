@@ -1,6 +1,9 @@
 import { useRef, useState } from 'react'
 import styles from './linkArticle.module.css'
 import ButtonLoading from '../../assets/svg/buttonLoading'
+import axios from 'axios'
+import serverAddress from '../serverAddress'
+import alphabetRandomChar from '../../helpers/alphabetRandomChar'
 function LinkArticle()
 {
 
@@ -22,7 +25,32 @@ function LinkArticle()
     }
 
 
-    
+    const send = async()=>
+    {
+        try
+        {
+
+            const id = []
+            for(let i =0;i<3;i++)
+            {
+                id.push(alphabetRandomChar())
+            }
+            for(let i = 0;i<3;i++)
+            {
+                id.push(Math.floor(Math.random() * 10))
+            }
+            const idJoined = id.join('')
+
+            console.log(`${serverAddress}${idJoined}`)
+            const response = await axios.post(`${serverAddress}/${idJoined}.json`, {
+                link:inputValue
+            })
+        }
+        catch(ex)
+        {
+            console.log(ex)
+        }
+    }
 
 
     const validateLink = ()=>
@@ -35,7 +63,7 @@ function LinkArticle()
             const value = inputValue.trim()
             if(value != '')
             {
-                
+                send()
             }
             else
             {
