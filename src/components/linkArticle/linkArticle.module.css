@@ -85,9 +85,30 @@
     transition: all .3s ease;
     letter-spacing: .1rem;
     font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .linkArticle>button:hover
 {
     background: #D98E04;
     border:.4rem solid #D98E04;
+}
+.loading
+{
+    width:4rem;
+    height: 4rem;
+}
+.loadingButton
+{
+    background: none !important;
+    border: 0 !important;
+    cursor: default !important;
+}
+.error
+{
+    color: red;
+    font-weight: 900;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
 }
