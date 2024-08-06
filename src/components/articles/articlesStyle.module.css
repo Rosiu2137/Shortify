@@ -40,6 +40,7 @@
     width:10rem;
     height: 10rem;
     fill: white;
+    transition: all .5s ease;
 }
 .icon2
 {
