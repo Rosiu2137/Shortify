@@ -1,17 +1,3 @@
-main
-{
-    width:80vw;
-    background-color: #212121;
-    padding: 0rem 3rem;
-}
-.line
-{
-    display: block;
-    width: 100%;
-    height: .2rem;
-    border-radius: 30px;
-    background-color: grey;
-}
 .App
 {
     display: flex;
