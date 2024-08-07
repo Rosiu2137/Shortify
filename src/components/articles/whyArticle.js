@@ -3,7 +3,7 @@ import styles from './articlesStyle.module.css'
 function WhyArticle()
 {
     return(
-        <article className={`${styles.article} ${styles.articleWhy}`}>
+        <article className={`${styles.article} ${styles.articleWhy}`} id="why">
             <h2>Po co skracać linki?</h2>
 
             <h3> Po co skracać linki?<mark className={styles.mark}> Otóż jest kilka powodów</mark></h3>

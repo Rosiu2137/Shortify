@@ -59,7 +59,7 @@ function HowItWorksArticle()
 
 
     return(
-        <article className={styles.article}>
+        <article className={styles.article} id="howItWorks">
             <h2>Jak to działa?</h2>
             <ol className={styles.list}>
                 <li className='listItem'>

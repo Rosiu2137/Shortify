@@ -1,12 +1,15 @@
 import styles from './nav.module.css'
 import logo from '../../assets/img/shortifyLogo.png'
 import { useEffect, useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 function Nav()
 {
 
     const [displayLogo,setDisplayLogo] = useState(false)
     const navRef = useRef()
     const logoRef = useRef()
+
+    const navigate = useNavigate()
 
     const windowScroll = (e)=>
     {
@@ -45,6 +48,12 @@ function Nav()
         }
     }
 
+    const goTo = (destination)=>
+    {
+        const div = document.querySelector(`#${destination}`)
+        window.scrollTo(0,div.offsetTop*0.9)
+    }
+
 
     return(
         <nav className={styles.nav} ref={navRef}>
@@ -54,13 +63,13 @@ function Nav()
                 </div>
 
                 <ul>
-                    <li>
+                    <li onClick={e=>goTo("howItWorks")}>
                         Jak to działa?
                     </li>
-                    <li>
+                    <li onClick={e=>goTo("why")}>
                         Po co skracać?
                     </li>
-                    <li>
+                    <li onClick={e=>goTo("about")}>
                         O nas
                     </li>
                 </ul>
