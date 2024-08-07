@@ -45,7 +45,7 @@ function LinkArticle(props)
             
             const response = await axios.post(`${serverAddress}/${idJoined}.json`, {link:inputValue})
 
-            props.setShortedLink(`http://localhost:3000/${idJoined}`)
+            props.setShortedLink(`shortify-cut.web.app/${idJoined}`)
 
             props.successHandler(true)
             setLoading(false)
