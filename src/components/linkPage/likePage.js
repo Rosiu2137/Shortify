@@ -67,6 +67,8 @@ function LinkPage()
            
             {!error && <h1>Trwa przekierowywanie{dots}</h1>}
 
+            {error?<button className={styles.homeBtn} onClick={e=>navigation('/')}>Strona Główna</button>:null}
+
             <a className={styles.a} href={usersLink} ref={linkRef}>jebac disa</a>
 
         </article>

@@ -35,3 +35,27 @@
     color: #D9A404;
     font-weight: 900;
 }
+.homeBtn
+{
+    margin-top:1rem;
+    width:80%;
+    font-size: 2rem;
+    outline: none;
+    background: grey;
+    font-weight: 900;
+    border:.4rem solid rgb(80, 80, 80);
+    border-radius: 1rem;
+    padding: .3rem;
+    cursor: pointer;
+    transition: all .3s ease;
+    letter-spacing: .1rem;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homeBtn:hover
+{
+    background: #D98E04;
+    border:.4rem solid #D98E04;
+}
