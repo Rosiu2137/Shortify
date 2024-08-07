@@ -7,9 +7,17 @@ import styles from './home.module.css'
 import Header from '../header/header'; 
 import Nav from '../nav/nav';
 import Footer from '../footer/footer';
-
+import { useState } from 'react';
 function Home()
 {
+
+    const [success,setSuccess] = useState(false)
+
+    const successHandler = (value)=>
+    {
+        setSuccess(value)
+    }
+
     return(
         <>
         <Header />
@@ -22,7 +30,9 @@ function Home()
         <Welcome />
         
 
-        <LinkArticle />
+        {success?<></>:<LinkArticle successHandler={successHandler}/>}
+
+       
 
         {/* <span className="line"></span> */}
 

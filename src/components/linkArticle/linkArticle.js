@@ -4,12 +4,13 @@ import ButtonLoading from '../../assets/svg/buttonLoading'
 import axios from 'axios'
 import serverAddress from '../serverAddress'
 import alphabetRandomChar from '../../helpers/alphabetRandomChar'
-function LinkArticle()
+function LinkArticle(props)
 {
 
     const [inputValue,setInputValue] = useState('')
     const [loading,setLoading] = useState(false)
     const [error,setError] = useState('')
+    
 
 
     const innerBottomBorderRef = useRef()
@@ -43,6 +44,10 @@ function LinkArticle()
 
             
             const response = await axios.post(`${serverAddress}/${idJoined}.json`, {link:inputValue})
+
+            props.successHandler(true)
+            setLoading(false)
+            setError('')
 
         }
         catch(ex)
