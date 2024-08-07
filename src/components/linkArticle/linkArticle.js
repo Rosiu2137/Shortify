@@ -41,14 +41,14 @@ function LinkArticle()
             }
             const idJoined = id.join('')
 
-            console.log(`${serverAddress}${idJoined}`)
-            const response = await axios.post(`${serverAddress}/${idJoined}.json`, {
-                link:inputValue
-            })
+            
+            const response = await axios.post(`${serverAddress}/${idJoined}.json`, {link:inputValue})
+
         }
         catch(ex)
         {
-            console.log(ex)
+            setError("Serwer nie odpowiada. Sprubój ponownie później.")
+            setLoading(false)
         }
     }
 
@@ -57,7 +57,6 @@ function LinkArticle()
     {
         if(!loading)
         {
-            console.log("valid")
             setError('')
             setLoading(true)
             const value = inputValue.trim()
