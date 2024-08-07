@@ -23,3 +23,15 @@
     width:10rem;
     height: 10rem;
 }
+.a
+{
+    display: none;
+}
+.error
+{
+    font-size: 2rem;
+    width:50vw;
+    text-align: center;
+    color: #D9A404;
+    font-weight: 900;
+}

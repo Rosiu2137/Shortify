@@ -28,6 +28,7 @@ function LinkArticle(props)
 
     const send = async()=>
     {
+        setLoading(true)
         try
         {
 
@@ -65,11 +66,19 @@ function LinkArticle(props)
         if(!loading)
         {
             setError('')
-            setLoading(true)
+            
             const value = inputValue.trim()
             if(value != '')
             {
-                send()
+                if(value.includes("http://") || value.includes("https://"))
+                {
+                    send()
+
+                }
+                else
+                {
+                    setError("Wprowadź poprawny link")
+                }
             }
             else
             {
