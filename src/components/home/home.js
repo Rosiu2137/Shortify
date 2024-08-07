@@ -12,7 +12,7 @@ import LinkSuccess from '../linkSucces/linkSucces';
 function Home()
 {
 
-    const [success,setSuccess] = useState(false)
+    const [success,setSuccess] = useState(true)
     const [shortedLink,setShortedLink] = useState('')
 
 
