@@ -43,7 +43,7 @@ function LinkArticle(props)
             const idJoined = id.join('')
 
             
-            const response = await axios.post(`${serverAddress}/${idJoined}.json`, {link:inputValue})
+            // const response = await axios.post(`${serverAddress}/${idJoined}.json`, {link:inputValue})
 
             props.successHandler(true)
             setLoading(false)

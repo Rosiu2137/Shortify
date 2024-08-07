@@ -8,6 +8,7 @@ import Header from '../header/header';
 import Nav from '../nav/nav';
 import Footer from '../footer/footer';
 import { useState } from 'react';
+import LinkSuccess from '../linkSucces/linkSucces';
 function Home()
 {
 
@@ -30,7 +31,7 @@ function Home()
         <Welcome />
         
 
-        {success?<></>:<LinkArticle successHandler={successHandler}/>}
+        {success?<LinkSuccess successHandler={successHandler} />:<LinkArticle successHandler={successHandler}/>}
 
        
 
