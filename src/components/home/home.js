@@ -13,11 +13,14 @@ function Home()
 {
 
     const [success,setSuccess] = useState(false)
+    const [shortedLink,setShortedLink] = useState('')
+
 
     const successHandler = (value)=>
     {
         setSuccess(value)
     }
+
 
     return(
         <>
@@ -31,7 +34,7 @@ function Home()
         <Welcome />
         
 
-        {success?<LinkSuccess successHandler={successHandler} />:<LinkArticle successHandler={successHandler}/>}
+        {success?<LinkSuccess successHandler={successHandler} shortedLink={shortedLink}/>:<LinkArticle successHandler={successHandler} setShortedLink={setShortedLink}/>}
 
        
 

@@ -31,7 +31,7 @@ function LinkSuccess(props)
 
             <h1 ref={h1ref}>Oto twój skrócony Link</h1>
 
-            <h2 ref={h2ref}>http://localhost:3000/</h2>
+            <h2 ref={h2ref}>{props.shortedLink}</h2>
 
             <p ref={pRef}>Skopiuj go i wklejaj aby łatwiej dostawać się do swoich ulubionych stron</p>
 
