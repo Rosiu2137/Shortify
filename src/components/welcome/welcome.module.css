@@ -16,3 +16,14 @@
     background:none;
     color: #D93232;
 }
+@media(max-width:445px)
+{
+    .welcome
+    {
+        font-size: 3.5rem;
+        width:95%;
+        margin-left: 2.5%;
+        text-align: center;
+        padding: 6rem 0;
+    }
+}

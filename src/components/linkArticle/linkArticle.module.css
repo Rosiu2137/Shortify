@@ -14,9 +14,6 @@
     font-size: 3rem;
     font-weight: 900;
     color: white;
-
-
-
 }
 .inputCon
 {
@@ -111,4 +108,53 @@
     font-weight: 900;
     letter-spacing: .1rem;
     font-size: 1.2rem;
+}
+@media (max-width:445px)
+{
+    .linkArticle>h1
+    {
+        font-size: 8rem;
+    }
+    .linkArticle
+    {
+        padding-bottom: 8rem;
+        gap:4rem;
+    }
+    .inputCon
+    {
+        width:95%; 
+        padding-bottom: 2rem;
+    }
+    .inputCon>input
+    {
+        font-size: 5rem;
+        padding: .8rem 1rem;
+    }
+    .bottomBorder
+    {
+        height: 1.5rem;
+    }
+    .linkArticle>button
+    {
+        font-size: 5rem;
+        width:95%;
+        border-radius: 3rem;
+        padding: 2rem 0;
+        background: #D98E04;
+        border:0;
+    }
+    .linkArticle>button:hover
+    {
+        border:0;
+    }
+    .error
+    {
+        font-size: 3.5rem;
+        letter-spacing: .3rem;
+    }
+    .loading
+    {
+        width:12rem;
+        height: 12rem;
+    }
 }

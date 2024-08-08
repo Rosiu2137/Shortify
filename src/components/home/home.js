@@ -28,27 +28,18 @@ function Home()
         
         <Nav />
 
-
         <main className={styles.main}>
 
-        <Welcome />
+            <Welcome />
+            
         
-
-        {success?<LinkSuccess successHandler={successHandler} shortedLink={shortedLink}/>:<LinkArticle successHandler={successHandler} setShortedLink={setShortedLink}/>}
-
-       
-
-        {/* <span className="line"></span> */}
-
-        <HowItWorksArticle />
-
-        {/* <span className="line"></span> */}
-
-        <WhyArticle />
-
-        {/* <span className="line"></span> */}
-
-        <About />
+            {success?<LinkSuccess successHandler={successHandler} shortedLink={shortedLink}/>:<LinkArticle successHandler={successHandler}  setShortedLink={setShortedLink}/>}
+        
+            <HowItWorksArticle />
+        
+            <WhyArticle />
+        
+            <About />
 
         </main>
 
