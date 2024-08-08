@@ -32,10 +32,18 @@ function Nav()
         if(displayLogo)
         {
             logoRef.current.classList.add(styles.logoDisplay)
+            if(window.innerWidth<445)
+            {
+                navRef.current.classList.add(styles.navWithLogo)
+            }
         }
         else
         {
             logoRef.current.classList.remove(styles.logoDisplay)
+            if(window.innerWidth<445)
+            {
+                navRef.current.classList.remove(styles.navWithLogo)
+            }
         }
 
     },[displayLogo])
