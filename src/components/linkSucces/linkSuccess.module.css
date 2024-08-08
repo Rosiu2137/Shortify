@@ -118,3 +118,45 @@
 {
     opacity: 0;
 }
+@media(max-width:445px)
+{
+    .article
+    {
+        gap:5rem;
+        margin: 4rem 0 8rem 0;
+    }
+    .article>h1
+    {
+        font-size: 8rem;
+    }
+    .article>h2
+    {
+        font-size: 5rem;
+        font-weight: 900;
+        gap:3rem;
+    }
+    .article>p
+    {
+        font-size: 4rem;
+        text-align: center;
+        width:90%;
+    }
+    .article>button
+    {
+        font-size: 5rem;
+        padding: 1rem;
+        border-radius: 3rem;
+        background: grey;
+        border:1rem solid rgb(80, 80, 80);
+        width:90%;
+    }
+    .article>button:hover
+    {
+        background: grey;
+        border:1rem solid rgb(80, 80, 80);
+    }
+    .autoCopy
+    {
+        display: none;
+    }
+}

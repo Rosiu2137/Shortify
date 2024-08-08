@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import styles from './linkArticle.module.css'
 import ButtonLoading from '../../assets/svg/buttonLoading'
 import axios from 'axios'
@@ -10,7 +10,7 @@ function LinkArticle(props)
     const [inputValue,setInputValue] = useState('')
     const [loading,setLoading] = useState(false)
     const [error,setError] = useState('')
-    
+    const buttonRef = useRef()
 
 
     const innerBottomBorderRef = useRef()
@@ -89,6 +89,24 @@ function LinkArticle(props)
         
     }
 
+    const keyDownFunc = (e)=>
+    {
+
+        if(e.key=== "Enter")
+        {
+            buttonRef.current.click()
+        }
+    }
+
+    useEffect(()=>{
+        window.addEventListener("keydown",keyDownFunc)
+        
+        return()=>{
+            window.removeEventListener("keydown",keyDownFunc)
+            
+        }
+    },[])
+
     return(
         <article className={styles.linkArticle}>
             <h1>
@@ -104,7 +122,7 @@ function LinkArticle(props)
 
             {error && <h3 className={styles.error}>{error}</h3>}
 
-            <button className={loading?styles.loadingButton:''} onClick={validateLink}>{loading?<ButtonLoading cl={styles.loading}/>:"Generuj link"}</button>
+            <button className={loading?styles.loadingButton:''} ref={buttonRef} onClick={validateLink}>{loading?<ButtonLoading cl={styles.loading}/>:"Generuj link"}</button>
 
 
 
