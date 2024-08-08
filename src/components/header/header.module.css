@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:.5rem;
     padding: 1rem;
 }
 .logo
@@ -18,4 +17,16 @@
 .logo>img
 {
     width: 100%;
+}
+@media (max-width:445px)
+{
+    .logo
+    {
+        width:70vw;
+        height: 15rem;
+    }
+    .header
+    {
+        padding: 2rem;
+    }
 }
