@@ -58,3 +58,46 @@
     transform: translate(1rem,0);
     color: #D98E04;
 }
+@media(max-width:445px)
+{
+    .footer
+    {
+        display: flex;
+        flex-direction: column;
+        gap:8rem;
+        padding-bottom: 10rem;
+    }
+    .logo
+    {
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo>img
+    {
+        width:80%;
+    }
+    .logo>h2
+    {
+        font-size: 5rem;
+        text-align: center;
+    }
+    .docs
+    {
+        padding: 0 5rem;
+        gap:7rem;
+    }
+    .docs>ul
+    {
+        gap:2rem;
+        font-size: 4.5rem;
+        align-items: center;
+    }
+    .docs>ul>li:hover
+    {
+        color: grey;
+        transform: none;
+    }
+
+}
