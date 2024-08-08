@@ -15,41 +15,45 @@ function HowItWorksArticle()
 
     const animationFunc = ()=>
     {
-        time = 0
-        time2 = 1500
-        const list = [...document.querySelectorAll('.listItem')]
-        list.forEach((x,idx)=>{
-            setTimeout(() => {
-                if(idx === 2)
-                {
-                    setStrokeOn(true)
-                    x.classList.add(styles.animation2)
-                }
-                else
-                {
-                    x.classList.add(styles.animation)
-
-                }
-            }, time+=1500);
-        })
-        list.forEach((x,idx)=>{
-            setTimeout(() => {
+        if(window.innerWidth > 445)
+        {
+            time = 0
+            time2 = 1500
+            const list = [...document.querySelectorAll('.listItem')]
+            list.forEach((x,idx)=>{
+                setTimeout(() => {
                     if(idx === 2)
                     {
-                        setStrokeOn(false)
-                        x.classList.remove(styles.animation2)
+                        setStrokeOn(true)
+                        x.classList.add(styles.animation2)
                     }
                     else
                     {
-                        x.classList.remove(styles.animation)
-
+                        x.classList.add(styles.animation)
+    
                     }
-            }, time2+=1500);
-        })
-
-        setTimeout(() => {
-            animationFunc()
-        }, 8000);
+                }, time+=1500);
+            })
+            list.forEach((x,idx)=>{
+                setTimeout(() => {
+                        if(idx === 2)
+                        {
+                            setStrokeOn(false)
+                            x.classList.remove(styles.animation2)
+                        }
+                        else
+                        {
+                            x.classList.remove(styles.animation)
+    
+                        }
+                }, time2+=1500);
+            })
+    
+            setTimeout(() => {
+                animationFunc()
+            }, 8000);
+        }
+        
 
     }
 

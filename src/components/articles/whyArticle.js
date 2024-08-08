@@ -7,6 +7,9 @@ function WhyArticle()
             <h2>Po co skracać linki?</h2>
 
             <h3> Po co skracać linki?<mark className={styles.mark}> Otóż jest kilka powodów</mark></h3>
+
+            <div className={styles.responseH3}>Otóż jest kilka powodów</div>
+
             <p>
             Obecnie stosowane linki są Długie i trudne do udostępnienia, zwłaszcza w wiadomościach tekstowych, mediach społecznościowych czy podczas komunikacji ustnej. Skrócone linki są bardziej kompaktowe i łatwiejsze do przekazania. Krótsze linki wyglądają bardziej estetycznie i profesjonalnie, co jest ważne przy dzieleniu się nimi w materiałach marketingowych, e-mailach, prezentacjach czy postach na blogach.
             </p>
